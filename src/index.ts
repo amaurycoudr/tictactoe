@@ -1,4 +1,4 @@
-import { getEmptyInBoard, getWinner, isDraw, makePlay } from './functions';
+import { getEmptyInBoard, getWinner, isDraw, makePlay } from './apiPublic';
 
 export default {
   makePlay,

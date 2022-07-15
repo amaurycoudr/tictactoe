@@ -8,7 +8,9 @@ import { isDefined, isSameCoordinate, isUndefined } from './typeGuard';
 
 export const forEachBox = (board: BoardState, callback: (coordinate: Coordinate) => void) => {
   for (let y = 0; y < board.length; y += 1)
-    for (let x = 0; x < (board[y]?.length || 0); x += 1) callback({ x, y });
+    for (let x = 0; x < (board[y]?.length || 0); x += 1) {
+      callback({ x, y });
+    }
 };
 
 const updateBox = (currentBox: Box, player: Player): Either<Error, Box> =>
@@ -35,4 +37,5 @@ export const isWinningBox = (board: BoardState, coordinate: Coordinate): boolean
   pipe(LINES, A.map(getLineAroundCoordinate(board, coordinate)), A.some(isWinningLine));
 
 const printBox = (box: Box): string => box ?? ' ';
+
 export const printRow = (row: RowState): string => `| ${row.map(printBox).join(' | ')} |`;
