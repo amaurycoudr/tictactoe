@@ -1,6 +1,6 @@
 {
   "name": "amaurycoudr-tictactoe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "tic tac toe in FP style",
   "main": "dist/amaurycoudr-tictactoe.cjs.js",
   "module": "dist/amaurycoudr-tictactoe.esm.js",
