@@ -144,6 +144,8 @@ describe(`test of ${printBoard.name}`, () => {
       ['X', 'X', 'X'],
     ];
     const result = printBoard(board);
+    console.log(result);
+
     expect(result).toBe(
       `\n-------------\n${board.map(printRow).join('\n-------------\n')}\n-------------\n`
     );

@@ -2,6 +2,16 @@
 
 this package provides a simple API to play at the Tic Tac Toe
 
+```
+    -------------
+    | X | X | X |
+    -------------
+    | X | X | X |
+    -------------
+    | X | X | X |
+    -------------
+```
+
 ## Instalation
 
 ```bash
