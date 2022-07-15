@@ -8,6 +8,10 @@
     "name": "amaurycoudr",
     "email": "amaury.coudrau@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amaurycoudr/tictactoe"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/plugin-transform-typescript": "^7.18.8",
@@ -34,5 +38,10 @@
   },
   "dependencies": {
     "fp-ts": "^2.12.1"
+  },
+  "scripts": {
+    "build": "preconstruct build",
+    "lint": "eslint --ext .ts,.js src/**/*.{ts,js}",
+    "ts": "tsc --noEmit"
   }
 }
