@@ -2,8 +2,8 @@
   "name": "amaurycoudr-tictactoe",
   "version": "0.0.2",
   "description": "tic tac toe in FP style",
-  "main": "dist/tictactoe.cjs.js",
-  "module": "dist/tictactoe.esm.js",
+  "main": "dist/amaurycoudr-tictactoe.cjs.js",
+  "module": "dist/amaurycoudr-tictactoe.esm.js",
   "author": {
     "name": "amaurycoudr",
     "email": "amaury.coudray@gmail.com"
