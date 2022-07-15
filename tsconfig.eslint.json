@@ -1,4 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["./**/*.ts", "./**/*.js", "./.*.js"]
+  "include": ["./**/*.ts", "./**/*.js", "./.*.js"],
+  "ecmaVersion": 12,
+  "sourceType": "module"
 }

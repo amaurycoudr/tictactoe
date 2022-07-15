@@ -1,7 +1,7 @@
 export type Row<T> = T[];
 type Board<T> = Row<T>[];
 
-export type Player = "X" | "O";
+export type Player = 'X' | 'O';
 export type Box = Player | undefined;
 export type RowState = Row<Box>;
 export type BoardState = Board<Box>;

@@ -1,7 +1,7 @@
-import { pipe } from "fp-ts/lib/function";
-import { BoardState, Box, Coordinate, Line, RowState } from "./type";
-import * as A from "fp-ts/lib/Array";
-import { isDefined } from "./typeGuard";
+import { pipe } from 'fp-ts/lib/function';
+import * as A from 'fp-ts/lib/Array';
+import { BoardState, Box, Coordinate, Line, RowState } from './type';
+import { isDefined } from './typeGuard';
 
 const getCoardinateWhenEmpty =
   (y: number) =>
@@ -21,10 +21,9 @@ const addCoordinate = ({ x: x1, y: y1 }: Coordinate, { x: x2, y: y2 }: Coordinat
 
 export const getLineAroundCoordinate =
   (board: BoardState, coordinate: Coordinate) =>
-  (line: Line): RowState => {
-    return [
+  (line: Line): RowState =>
+    [
       getBox(board, coordinate),
       getBox(board, addCoordinate(coordinate, line[1])),
       getBox(board, addCoordinate(coordinate, line[0])),
     ];
-  };

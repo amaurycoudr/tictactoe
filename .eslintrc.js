@@ -1,8 +1,14 @@
 module.exports = {
   root: true,
-  extends: "airbnb-typescript/base",
-  plugins: ["import", "prettier"],
-  parserOptions: {
-    project: "./tsconfig.eslint.json",
-  },
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint', 'prettier', 'import'],
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      extends: ['airbnb/base', 'airbnb-typescript/base', 'prettier'],
+      parserOptions: {
+        project: './tsconfig.json',
+      },
+    },
+  ],
 };

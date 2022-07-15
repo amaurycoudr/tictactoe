@@ -1,4 +1,4 @@
-import { Coordinate } from "./type";
+import { Coordinate } from './type';
 
 export const isUndefined = <T>(value: T | undefined): value is undefined => value === undefined;
 

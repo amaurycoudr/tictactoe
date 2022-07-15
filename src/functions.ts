@@ -1,10 +1,10 @@
-import * as A from "fp-ts/lib/Array";
-import { Applicative, isLeft } from "fp-ts/lib/Either";
-import { pipe } from "fp-ts/lib/function";
-import { getBox, getEmptyInRow } from "./getters";
-import { BoardState, Play, Player } from "./type";
-import { isUndefined } from "./typeGuard";
-import { forEachBox, isWinningBox, printRow, updateRowBoxIfSameCoordinate } from "./utils";
+import * as A from 'fp-ts/lib/Array';
+import { Applicative, isLeft } from 'fp-ts/lib/Either';
+import { pipe } from 'fp-ts/lib/function';
+import { getBox, getEmptyInRow } from './getters';
+import { BoardState, Play, Player } from './type';
+import { isUndefined } from './typeGuard';
+import { forEachBox, isWinningBox, printRow, updateRowBoxIfSameCoordinate } from './utils';
 
 /**
  *
@@ -49,15 +49,13 @@ export const getWinner = (board: BoardState): Player | undefined => {
  * @param board
  * @returns true if game is over and there is no winner
  */
-export const isDraw = (board: BoardState): boolean => {
-  return getEmptyInBoard(board).length === 0 && !getWinner(board);
-};
+export const isDraw = (board: BoardState): boolean =>
+  getEmptyInBoard(board).length === 0 && !getWinner(board);
 
 /**
  *
  * @param board
  * @returns representation of board
  */
-export const printBoard = (board: BoardState): string => {
-  return "\n-------------\n" + board.map(printRow).join("\n-------------\n") + "\n-------------\n";
-};
+export const printBoard = (board: BoardState): string =>
+  `\n-------------\n${board.map(printRow).join('\n-------------\n')}\n-------------\n`;
