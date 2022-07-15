@@ -1,12 +1,12 @@
 {
-  "name": "tictactoe",
+  "name": "amaurycoudr/tictactoe",
   "version": "0.0.1",
   "description": "tic tac toe in FP style",
   "main": "dist/tictactoe.cjs.js",
   "module": "dist/tictactoe.esm.js",
   "author": {
     "name": "amaurycoudr",
-    "email": "amaury.coudrau@gmail.com"
+    "email": "amaury.coudray@gmail.com"
   },
   "repository": {
     "type": "git",
