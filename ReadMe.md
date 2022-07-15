@@ -2,8 +2,6 @@
 
 this package provides a simple API to play at the Tic Tac Toe
 
----
-
 ## Instalation
 
 ```bash
@@ -11,8 +9,6 @@ yarn add amaurycoudr-tictactoe
 #or
 npm i amaurycoudr-tictactoe
 ```
-
----
 
 ## Data strucutre
 
@@ -28,8 +24,6 @@ type BoardState = [RowState, RowState, RowState];
 
 :warning: A box at **undefined is empty**
 
----
-
 ## API Reference
 
 The package expose 5 functions:
@@ -39,8 +33,6 @@ The package expose 5 functions:
 - getWinner
 - isDraw
 - printBoard
-
----
 
 ### getEmptyInBoard (board: BoardState)=> Coordinate[]
 
