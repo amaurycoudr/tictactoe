@@ -6,10 +6,10 @@ name: Node.js Package
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,7 +22,7 @@ jobs:
       - run: yarn lint
 
   publish-npm:
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -31,7 +31,6 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: yarn install --frozen-lockfile
-      - run: yarn build
       - run: yarn release
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
