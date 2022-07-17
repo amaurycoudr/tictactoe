@@ -1,1 +1,9 @@
 ./src
+.prettierrc
+tsconfig.eslint.json
+tsconfig.json
+.gitignore
+.eslintrc.js
+.babelrc
+.vscode/
+.github/
