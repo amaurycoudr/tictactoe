@@ -48,6 +48,6 @@
     "watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "check": "yarn test && yarn lint && yarn ts",
-    "release": "yarn build && npm publish"
+    "release": "yarn build && yarn publish"
   }
 }
